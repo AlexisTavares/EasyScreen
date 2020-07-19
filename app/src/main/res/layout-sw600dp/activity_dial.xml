@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gridLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/activity_dial_num_display"
+        android:layout_width="0dp"
+        android:layout_height="76dp"
+        android:width="0dp"
+        android:background="#959393"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="@+id/activity_dial_call"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/activity_dial_call"
+        android:layout_width="390dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="@string/call"
+        android:onClick="dialNumber"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/activity_dial_call"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/activity_dial_num0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="dial"
+            android:text="0"
+            android:textSize="100sp"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_row="3"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/activity_dial_num1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="dial"
+            android:text="1"
+            android:textSize="100sp"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="2"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/activity_dial_num2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="dial"
+            android:text="2"
+            android:textSize="100sp"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_row="2"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/activity_dial_num3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="dial"
+            android:text="3"
+            android:textSize="100sp"
+            app:layout_column="2"
+            app:layout_columnWeight="1"
+            app:layout_row="2"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/activity_dial_num4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="dial"
+            android:text="4"
+            android:textSize="100sp"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/activity_dial_num5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="dial"
+            android:text="5"
+            android:textSize="100sp"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/activity_dial_num6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="dial"
+            android:text="6"
+            android:textSize="100sp"
+            app:layout_column="2"
+            app:layout_columnWeight="1"
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/activity_dial_num7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="dial"
+            android:text="7"
+            android:textSize="100sp"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="0"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/activity_dial_num8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="dial"
+            android:text="8"
+            android:textSize="100sp"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_row="0"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/activity_dial_num9"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="dial"
+            android:text="9"
+            android:textSize="100sp"
+            app:layout_column="2"
+            app:layout_columnWeight="1"
+            app:layout_row="0"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/activity_dial_delete"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="dialDelete"
+            android:text="@string/delete"
+            android:textSize="45sp"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="3"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/activity_dial_back"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="dialBack"
+            android:text="@string/back"
+            android:textSize="45sp"
+            app:layout_column="2"
+            app:layout_columnWeight="1"
+            app:layout_row="3"
+            app:layout_rowWeight="1" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#CDCCCC"
+        android:gravity="center"
+        android:text="@string/phone_number"
+        android:textColor="#000000"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="@+id/activity_dial_call"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
